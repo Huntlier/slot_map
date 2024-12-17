@@ -181,7 +181,7 @@ template <typename T> struct slot_map_key64
     }
 
     slot_map_key64() noexcept = default;
-    explicit slot_map_key64(id_type raw) noexcept
+    constexpr explicit slot_map_key64(id_type raw) noexcept
         : raw(raw)
     {
     }
@@ -266,7 +266,7 @@ template <typename T> struct slot_map_key32
     }
 
     slot_map_key32() noexcept = default;
-    explicit slot_map_key32(id_type raw) noexcept
+    constexpr explicit slot_map_key32(id_type raw) noexcept
         : raw(raw)
     {
     }
